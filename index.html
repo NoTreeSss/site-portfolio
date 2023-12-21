@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Silkscreen&display=swap" rel="stylesheet">
+        
+    <title>My_Portfolio-site</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="menu">
+                
+                <ul class="nav-links">
+                    <a class="logo-dod"><i>IT</i><b>V</b><i>T</i></a>
+                    <li><a href="#pchela">ПОРТФОЛИО</a></li>
+                    <li><a href="#obo">ОБО МНЕ</a></li>
+                    <li><a href="#usl">УСЛУГИ</a></li>
+                    <li><a href="#cont">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+    <div class="header-section">
+        <div class="left-section">
+            <img class="animated-img" src="/img/klipartz.com(2).png" alt="Header Image">
+        </div>
+        <div class="right-section">
+            <div class="intro animatedcard">
+                <h2 style="color: #793a00;"><a id="Ticker" href="http://example.com/default_link">Здесь можно вписать дефолтную ссылку.</a>
+
+                    <script>
+                    autotypingText( {
+                        typingSpeed: 50,       
+                        switchTimeout: 2000,   
+                        element: document.getElementById( 'Ticker' ),
+                        data: [
+                            {
+                                text: '--Я разработчик--',
+                            },
+                            {
+                                text: '--Студент--',
+                            },
+                            {
+                                text: '--Developer--',
+                            },
+                        ],
+                    } )
+                    
+
+                    function autotypingText( args ){
+                    
+                        let itemCount = Number( args.data.length );
+                        let curItemIndex = -1;
+                        let currentLength = 0;
+                        let theText = '';
+                    
+                        runTheTicker();
+                    
+                        function runTheTicker(){
+                            let theHold
+                    
+
+                            if( currentLength === 0 ){
+                                curItemIndex++;
+                                curItemIndex = curItemIndex % itemCount;
+                                theText = args.data[curItemIndex].text.replace( /"/g, '-' );
+                                args.element.href = args.data[curItemIndex].url;
+                            }
+                    
+
+                            args.element.innerHTML = theText.substring( 0, currentLength ) + znak();
+                    
+
+                            if( currentLength !== theText.length ){
+                                currentLength++;
+                                theHold = args.typingSpeed;
+                            }
+                            else{
+                                currentLength = 0;
+                                theHold = args.switchTimeout;
+                            }
+                    
+                            setTimeout( runTheTicker, theHold );
+                        }
+                    
+                        function znak(){
+                            return ( currentLength === theText.length ) ? '' : '|';
+                        }
+                    
+                    }
+                    </script></h2>
+            </div>
+            <div class="main-text">
+                <h1>
+                    
+                    Привет,<br>
+                    Меня зовут  <Br>
+                    Дмитрий
+                </h1>
+            </div>
+            <div class="paragraph animatedcard">
+                 <p>В моём сайте портфолио, я вам поведаю о своих работах, 
+                    <br>клиентах и дам вам свои контакты для дальнейших работ.</p>
+            </div>
+            <div class="contact-button animatedcard">
+                <a href="#cont">
+                    <p style="padding: 9px; ">КОНТАКТЫ</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="pchela" class="name-g">ПОРТФОЛИО</h1>
+    <div class="container-main">
+        <div class="hover-text-one">
+            <figure class="effect-text-three">
+                <img src="img/p.png" alt="beene"/>
+                <figcaption>
+                <a href="https://notreesss.github.io/bee-home-test/"><h3>Сайт пчёлки</h3></a>
+                </figcaption>			
+            </figure>
+          </div>
+        <div class="hover-text-one">
+            <figure class="effect-text-three">
+              <img src="img/v.png" alt="site-visit"/>
+                <figcaption>
+                <a href="https://notreesss.github.io/site-visit/"><h3>Сайт-Визитка</h3></a>
+                </figcaption>			
+            </figure>
+          </div>
+        <div class="hover-text-one">
+            <figure class="effect-text-three">
+              <img src="img/z.png" alt="zk-melody"/>
+                <figcaption>
+                <a href="https://notreesss.github.io/zhk-melody/"><h3>ЖК-Мелодия</h3></a>
+                </figcaption>			
+            </figure>
+          </div>
+        <div class="hover-text-one">
+            <figure class="effect-text-three">
+              <img src="img/f.png" alt="one-site"/>
+                <figcaption>
+                <a href="https://notreesss.github.io/first-site/"><h3>Первый-Сайт</h3></a>
+                </figcaption>			
+            </figure>
+          </div>
+    </div>
+    <h1 id="obo" class="name-h">ОБО МНЕ</h1>
+    <div class="my-content">
+        <div class="left-ection">
+            <img class="my-img" src="img/klipartz.com(11).png" alt="my-img">
+        </div>
+        <div class="text-my">
+            <p>Всем привет, Меня зовут Дмитрий.
+            <br>За 4 месяца обучения я освоил знания<br> о таких языках программирования как <br>HTML / CSS / JavaSkript /  <br>обучился дизайну и вёрстке сайтов.</p>
+            <img class="speak" src="img/speak.png" alt="speak">
+            <div class="pie animate" style="--p:50;--c:red"> 50%</div>
+            <div class="pie animate" style="--p:10;--c:yellow"> 10%</div>
+            <div class="pie animate" style="--p:40;--c:blue"> 40%</div>
+        </div>
+    </div>
+    <section class="servise">
+        <h1 id="usl" class="name-a">УСЛУГИ</h1>
+        <article class="servise_column">
+            <img class="servise_img" src="img/beck-end.png" alt="beck-end">
+            <h2><b>BECK-END разработчик</b></h2>
+            <p>Backend-разработчики создают серверную часть приложений, работают с базами данных, программируют, интегрируются с внешними системами, разрабатывают микросервисы и работают с контейнерами.</p>
+        </article>
+        <article class="servise_column">
+            <img class="servise_img" src="img/front-end.png" alt="front-end">
+            <h2><b>FRONT-END разработчик</b></h2>
+            <p>FRONT-END разработчики занимаются созданием интерактивного и привлекательного пользовательского интерфейса для веб-сайтов и приложений. В их обязанности входит разработка и проектирование внешнего вида и поведения веб-страниц, использование CSS, HTML и JavaScript для создания динамических элементов, тестирование и отладка кода, работа с интерфейсами взаимодействия с пользователем (UX) и адаптивный дизайн для разных устройств.</p>
+        </article>
+        <article class="servise_column">
+            <img class="servise_img" src="img/photoshop.png" alt="photoshop">
+            <h2><b>PHOTOSHOP дизайнер</b></h2>
+            <p>PHOTOSHOP дизайнеры работают с растровой графикой в программе Adobe Photoshop. Они могут заниматься ретушью фотографий, созданием коллажей, подготовкой изображений для печати или использования в качестве дизайна на веб-сайтах. В процессе работы дизайнеры используют инструменты программы для редактирования изображений, создания спецэффектов и работы с слоями. Также они могут заниматься разработкой и созданием уникальных графических элементов и иллюстраций.</p>
+        </article>
+    </section>
+    <h1 id="cont" class="name-h">КОНТАКТЫ</h1>
+    <div class="form">
+        <form id="contact-form" action="0">
+            <div class="form_item">
+                <label for="topic" >Тема</label><br>
+                <select name="topic" id="topic">
+                    <option value="0">Выберите тему </option>
+                    <option value="1">Заказать услугу</option>
+                    <option value="2">Оставить отзыв/замечание</option>
+                    <option value="3">Предложить сотрудничество</option>
+                    <option value="4">Другое</option>
+                </select>
+            </div>
+            <div class="form_item">
+                <label for="name">Имя</label><br>
+                <input name="name" id="name" type="text" required placeholder="введите  имя">
+            </div>
+            <div class="form_item">
+                <label for="mail">E-Mail</label><br>
+                <input type="email" name="mail" id="mail" required placeholder="введите электронную почту">
+            </div>
+            <div class="form_item">
+                <label for="date">Дата</label><br>
+                <input type="number" name="number" id="date" required placeholder="Дата">
+            </div>
+            <div class="form_item">
+                <label for="tel">Номер телефона</label><br>
+                <input type="tel" name="tel" id="tel" required placeholder="Введите номер">
+            </div>
+            <div class="form_item">
+                <label for="text" >Текст сообщения</label><br>
+                <textarea name="text" id="text" required placeholder="оставь своё сообщение " ></textarea>
+            </div>
+            <div class="form_item">
+                <input type="submit">
+            </div>
+        </form> 
+    </div>
+    </main>
+
+    <footer>
+        <a href="#pchela"><p class="footer__block" id="gioPika">МОЁ ПОРТФОЛИО &#9650;</p></a>
+        <p class="footer__block">&copy; Сообщить о проблемах<br>
+            +7 (900)-818-77-33
+        </p>
+        <div class="footer__icons">
+            <img class="footer__img" src="img/4691519_twitch_icon.png" alt="twitch_icon">
+            <img class="footer__img" src="img/9034990_logo_vk_icon.png" alt="logo">
+            <img class="footer__img" src="img/8547122_telegram_plane_icon.png" alt="telegram">
+        </div>
+    </footer>
+</body>
+</html>
